@@ -1,0 +1,9 @@
+.sideNavOpenner {
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+
+  @media screen and (width >= 992px) {
+    display: none;
+  }
+}

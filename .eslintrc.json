@@ -1,0 +1,48 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "next",
+    "prettier",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:i18next/recommended"
+  ],
+  "overrides": [
+    {
+      "env": {
+        "node": true
+      },
+      "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "sourceType": "script"
+      }
+    }
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "react", "@stylistic", "i18next"],
+  "rules": {
+    "@stylistic/linebreak-style": ["off", "unix"],
+    "@stylistic/indent": ["off", 2],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "prettier/prettier": "warn",
+    "react/jsx-no-literals": ["off", { "noStrings": true }],
+    "i18next/no-literal-string": ["off", 2]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

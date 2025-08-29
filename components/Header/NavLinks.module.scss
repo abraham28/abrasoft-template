@@ -1,0 +1,19 @@
+.link {
+  font-size: var(--font-size-md);
+  color: var(--secondary);
+  padding: var(--padding-base) var(--padding-base);
+  overflow-wrap: break-word;
+  text-decoration: none;
+
+  @media screen and (width >= 992px) {
+    padding: var(--padding-5xs) var(--padding-base);
+  }
+
+  &:hover {
+    background-color: var(--light-hover);
+  }
+}
+
+.activeLink {
+  color: var(--primary);
+}

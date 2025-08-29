@@ -1,0 +1,98 @@
+@import url("~bootstrap/dist/css/bootstrap.min.css");
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* Colors */
+  --primary: #216ed3;
+  --primary-hover: #43b4ff;
+  --secondary: #0b2b57;
+  --secondary-hover: #153768;
+  --color-gray: #212529;
+  --light-hover: #ededed;
+  --accent-color: #98c99e;
+  --success: #6abf69;
+  --info: #6ea2f5;
+  --warning: #f7b529;
+  --danger: #de656b;
+  --light: #fff;
+  --dark: #394240;
+  --font-sans-serif: inter, -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-monospace: sfmono-regular, menlo, monaco, consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --body-font-family: var(--bs-font-sans-serif);
+
+  /* font sizes */
+  --font-size-base: 16px;
+  --font-size-5xl: 24px;
+  --font-size-13xl: 32px;
+  --font-size-21xl: 40px;
+
+  /* Gaps */
+  --gap-3xs: 10px;
+  --gap-base: 16px;
+
+  /* Paddings */
+  --padding-5xs: 8px;
+  --padding-3xs: 10px;
+  --padding-smi: 13px;
+  --padding-sm: 14px;
+  --padding-base: 16px;
+  --padding-xl: 20px;
+  --padding-13xl: 32px;
+  --padding-41xl: 60px;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 500 !important;
+  font-size: var(--font-size-base);
+  font-family: var(--body-font-family);
+  color: var(--bs-dark);
+
+  a {
+    color: var(--primary);
+  }
+}
+
+.btn {
+  border: 0 !important;
+  border-radius: 0 !important;
+  padding: var(--padding-5xs) var(--padding-base) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  color: var(--light) !important;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-visible {
+    background-color: var(--primary-hover) !important;
+  }
+
+  &:active {
+    background-color: var(--primary) !important;
+  }
+}
+
+.btn-secondary {
+  background-color: var(--secondary) !important;
+  color: var(--light) !important;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-visible {
+    background-color: var(--secondary-hover) !important;
+  }
+
+  &:active {
+    background-color: var(--dark) !important;
+  }
+}

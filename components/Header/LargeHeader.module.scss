@@ -1,0 +1,12 @@
+.linksContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: 700;
+  flex-grow: 1;
+
+  @media screen and (width < 992px) {
+    display: none;
+  }
+}
